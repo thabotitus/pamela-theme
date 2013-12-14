@@ -103,9 +103,7 @@ section#about{
 
 	#guest-comments{
 
-		h3{
-			text-align: right;
-		}
+		h3{ text-align: right; }
 
 		.a-comment{
 			margin-left: 20px;
@@ -212,7 +210,7 @@ footer{ width: 100%; float: left; margin-top: 40px;
 
 @media only screen and (min-width : 768px) and (max-width : 959px){
 	/* Welcome Section */
-	section#welcome{ padding-top: 75px; padding-bottom: 120px;
+	section#welcome{ padding-top: 75px; padding-bottom: 120px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
 		.desc{ font-size: 1em; text-align: center; color: #fff; }
 	}
 	/* About Section */
@@ -221,27 +219,52 @@ footer{ width: 100%; float: left; margin-top: 40px;
 		#creed{ p{ font-size: 1.3em; } }
 		#social{ font-size: 1.8em; }
 	}
-
 	/* Gallery Section */
 	section#gallery{ 
 		h3{ font-size: 1.8em; } 
 	}
+	/* Contact Section */
+	section#contact{ 
+		.directions{ p{ font-size: 0.8em; } }
+		h3{ font-size: 1.3em; }
+		h4{ font-size: 1em; }
+		address{ p{ font-size: 11px;} }	
+	}
+}
 
-	section#contact{ width: 100%; position: relative; z-index: 20; margin-top: -50px; float: left;
-	
-	/* Classes */
-	.row{ background: #fff; border-radius: 2px; padding-top: 20px; min-height: 500px; }
-	.directions{ margin-top: 15px; 
-		p{ font-size: 0.8em; }		
+@media only screen and (min-width : 480px) and (max-width : 767px){
+
+	body{ font-size: 10pt; }
+
+	section#welcome{ padding-top: 75px; padding-bottom: 120px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+		.desc{ font-size: 1em; text-align: center; color: #fff; }
 	}
 
-	/* Elements */
-	h3{ font-size: 1.3em; margin-bottom: 20px; }
-	h4{ font-size: 1.2em; }
-	address{ font-size: 0.8em; border-bottom: 1px dashed #252525; p{ font-size: 11px;}}
-	iframe{ width: 100%; height: 480; }		
-}
+	/* About Section */
+	section#about{
+		h3{ font-size: 1.3em; text-align: left; }
+		#creed{ margin-top: 0; p{ font-size: 1.3em; } }
+		#social{ font-size: 1.8em; width: 100%; text-align: center; }
+		#guest-comments{ margin-top:  30px; h3{ text-align: left; } .commenter-name{ font-size: 0.8em; margin-top: 0 !important; } }
+	}
 
+	section#gallery{
+		h3{ font-size: 1.3em; }
+		.gallery-image{
+			margin-bottom:  20px;
+			img{ width: 100%; }
+
+			figure{ max-height: 300px !important; }
+		}
+	}
+
+	/* Contact Section */
+	section#contact{ 
+		.directions{ float: left; padding-bottom:  20px; p{ font-size: 0.8em; } }
+		h3{ font-size: 1.5em; margin-top:  30px;}
+		h4{ font-size: 1em; }
+		address{ p{ font-size: 11px;} }	
+	}
+	
 }
-@media only screen and (min-device-width : 480px) and (max-device-width : 767px){}
 @media only screen and (min-device-width : 320px) and (max-device-width : 479px){}
