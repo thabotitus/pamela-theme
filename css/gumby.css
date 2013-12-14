@@ -2602,34 +2602,37 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 * font-family: 'Noticia Text', serif;
 *
 ***************************************/
-/* General Styles */
+/********** General Styles **********/
 body { background: #e6e6e6 url("../img/Paper.svg") repeat; font-family: 'Fauna one', serif; font-size: 11pt; }
 
 h1, h2, h3, h4, h5, h6, p, section, article { font-family: 'Fauna one', serif; }
 
 .photo-credits { display: none; }
 
-/* Welcome Section */
-section#welcome { width: 100%; padding-top: 150px; padding-bottom: 200px; float: left; background: url("../img/2.jpg") no-repeat; background-size: 100%; font-family: 'Fauna one', serif; text-align: center; color: #252525; position: relative; z-index: 8; border-bottom: 0px solid #e74c3c; }
+/*********** Welcome Section **********/
+section#welcome { width: 100%; padding-top: 150px; padding-bottom: 200px; float: left; background: url("../img/2.jpg") no-repeat; background-size: 100%; font-family: 'Fauna one', serif; text-align: center; color: #252525; position: relative; z-index: 8; border-bottom: 0px solid #e74c3c; /* Elements */ /* Classes */ }
 section#welcome h1 { font-family: 'Lily Script One', serif; font-size: 4em; text-align: center; color: #252525; padding: 15px; text-shadow: 3px 5px 0px #ccc; }
 section#welcome .curve-up, section#welcome .curve-down { font-family: 'Fauna one', serif; text-align: center; font-size: 1.5em; color: #252525; letter-spacing: 2px; text-transform: uppercase; }
 section#welcome .desc { padding-top: 40px; font-family: 'Fauna one', serif; width: 80%; margin: 0 auto; font-size: 1.1em; }
 
-section#about { width: 100%; float: left; position: relative; z-index: 9; margin-top: -80px; }
-section#about .row { background: #fff; border-radius: 4px; padding-top: 50px; padding-bottom: 20px; }
+/********** About Section **********/
+section#about { width: 100%; float: left; position: relative; z-index: 9; margin-top: -80px; /* Elements */ /* Classes */ /* Ids */ }
 section#about h3 { text-transform: uppercase; font-size: 1.5em; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; }
 section#about p { font-size: 0.9em; text-align: justify; }
+section#about .row { background: #fff; border-radius: 4px; padding-top: 50px; padding-bottom: 20px; }
 section#about .about-desc { margin-left: 20px; margin-right: 20px; }
+section#about #guest-comments { /* Elements */ /* Classes */ }
 section#about #guest-comments h3 { text-align: right; }
 section#about #guest-comments .a-comment { margin-left: 20px; margin-right: 20px; margin-bottom: 20px; border-bottom: 1px dashed #ccc; font-style: italic; }
 section#about #guest-comments .a-comment:last-child { border-bottom: none; }
 section#about #guest-comments .a-comment .comment-message { font-size: 0.8em; }
 section#about #guest-comments .a-comment .commenter-name { text-align: right; font-size: 0.8em; margin-top: -13px; }
-section#about #creed { float: left; width: 100%; padding-top: 20px; padding-bottom: 20px; margin-top: 40px; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; }
+section#about #creed { float: left; width: 100%; padding-top: 20px; padding-bottom: 20px; margin-top: 40px; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; /* Elements */ }
 section#about #creed p { font-size: 1.5em; font-style: italic; text-align: center; padding-left: 20px; padding-right: 20px; }
-section#about #social { width: 100%; padding-top: 15px; padding-bottom: 15px; margin-left: 0; margin-top: 20px; text-align: center; float: left; color: #252525; font-size: 2em; }
+section#about #social { width: 100%; padding-top: 15px; padding-bottom: 15px; margin-left: 0; margin-top: 20px; text-align: center; float: left; color: #252525; font-size: 2em; /* Elements */ }
 section#about #social a { color: #252525; }
 
+/********** Gallery Section **********/
 section#gallery { width: 100%; padding-top: 140px; padding-bottom: 100px; float: left; background: url("../img/2.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; margin-top: -100px; position: relative; z-index: 5; /* Elements */ /* Classes */ }
 section#gallery h3 { color: #252525; text-align: center; font-size: 2em; text-align: center; padding: 15px; margin-bottom: 40px; }
 section#gallery .gallery-image { background: #fff; border-radius: 2px; padding: 10px; /* Classes */ }
@@ -2640,6 +2643,7 @@ section#gallery .secondary-gallery .desc { min-height: 120px; }
 section#gallery .secondary-gallery figure { max-height: 200px; overflow: hidden; margin-bottom: 15px; }
 section#gallery .secondary-gallery figure img { margin-top: -50px; }
 
+/********** Contact Section **********/
 section#contact { width: 100%; position: relative; z-index: 20; margin-top: -50px; float: left; /* Classes */ /* Elements */ }
 section#contact .row { background: #fff; border-radius: 2px; padding-top: 20px; min-height: 500px; }
 section#contact .directions { margin-top: 15px; }
@@ -2652,6 +2656,9 @@ section#contact iframe { width: 100%; height: 480; }
 footer { width: 100%; float: left; margin-top: 40px; /* Elements */ }
 footer p { font-size: 0.8em; }
 
+/********************************
+*	Media Queries				*
+********************************/
 @media only screen and (min-width: 768px) and (max-width: 959px) { /* Welcome Section */
   section#welcome { padding-top: 75px; padding-bottom: 120px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
   section#welcome .desc { font-size: 1em; text-align: center; color: #fff; }
