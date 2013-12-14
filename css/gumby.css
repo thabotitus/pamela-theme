@@ -2667,6 +2667,7 @@ footer p { font-size: 0.8em; }
   section#contact h4 { font-size: 1em; }
   section#contact address p { font-size: 11px; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) { body { font-size: 10pt; }
+  /* Welcome Section */
   section#welcome { padding-top: 75px; padding-bottom: 120px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
   section#welcome .desc { font-size: 1em; text-align: center; color: #fff; }
   /* About Section */
@@ -2677,7 +2678,31 @@ footer p { font-size: 0.8em; }
   section#about #guest-comments { margin-top: 30px; }
   section#about #guest-comments h3 { text-align: left; }
   section#about #guest-comments .commenter-name { font-size: 0.8em; margin-top: 0 !important; }
-  section#gallery h3 { font-size: 1.3em; }
+  /* Gallery Section */
+  section#gallery h3 { font-size: 1.5em; }
+  section#gallery .gallery-image { margin-bottom: 20px; }
+  section#gallery .gallery-image img { width: 100%; }
+  section#gallery .gallery-image figure { max-height: 300px !important; }
+  /* Contact Section */
+  section#contact .directions { float: left; padding-bottom: 20px; }
+  section#contact .directions p { font-size: 0.8em; }
+  section#contact h3 { font-size: 1.5em; margin-top: 30px; }
+  section#contact h4 { font-size: 1em; }
+  section#contact address p { font-size: 11px; } }
+@media only screen and (min-width: 320px) and (max-width: 479px) { body { font-size: 9pt; }
+  /* Welcome Section */
+  section#welcome { padding-top: 75px; padding-bottom: 120px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+  section#welcome .desc { font-size: 1em; text-align: center; color: #fff; }
+  /* About Section */
+  section#about h3 { font-size: 1.3em; text-align: left; }
+  section#about #creed { margin-top: 0; }
+  section#about #creed p { font-size: 1.3em; }
+  section#about #social { font-size: 1.8em; width: 100%; text-align: center; }
+  section#about #guest-comments { margin-top: 30px; }
+  section#about #guest-comments h3 { text-align: left; }
+  section#about #guest-comments .commenter-name { font-size: 0.8em; margin-top: 0 !important; }
+  /* Gallery Section */
+  section#gallery h3 { font-size: 1.5em; }
   section#gallery .gallery-image { margin-bottom: 20px; }
   section#gallery .gallery-image img { width: 100%; }
   section#gallery .gallery-image figure { max-height: 300px !important; }
