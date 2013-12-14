@@ -2630,31 +2630,43 @@ section#about #creed p { font-size: 1.5em; font-style: italic; text-align: cente
 section#about #social { width: 100%; padding-top: 15px; padding-bottom: 15px; margin-left: 0; margin-top: 20px; text-align: center; float: left; color: #252525; font-size: 2em; }
 section#about #social a { color: #252525; }
 
-section#accommodation { width: 100%; margin-top: -40px; margin-bottom: 40px; float: left; position: relative; z-index: 10; display: none; }
-section#accommodation .row { padding-top: 0px; padding-bottom: 0px; }
-section#accommodation h3 { text-transform: uppercase; font-size: 1.8em; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; display: none; }
-section#accommodation .a-room { float: left; }
-section#accommodation .a-room img { float: left; padding: 0px; border: 5px solid #e6e6e6; border-radius: 500px; }
-section#accommodation .a-room .book-now { display: none; }
-
-section#gallery { width: 100%; padding-top: 140px; padding-bottom: 100px; float: left; background: url("../img/2.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; margin-top: -100px; position: relative; z-index: 5; }
+section#gallery { width: 100%; padding-top: 140px; padding-bottom: 100px; float: left; background: url("../img/2.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; margin-top: -100px; position: relative; z-index: 5; /* Elements */ /* Classes */ }
 section#gallery h3 { color: #252525; text-align: center; font-size: 2em; text-align: center; padding: 15px; margin-bottom: 40px; }
-section#gallery .gallery-image { background: #fff; border-radius: 2px; padding: 10px; }
+section#gallery .gallery-image { background: #fff; border-radius: 2px; padding: 10px; /* Classes */ }
 section#gallery .gallery-image .desc { font-size: 0.78em; }
 section#gallery .primary-gallery { float: left; }
-section#gallery .secondary-gallery { float: left; margin-top: 40px; }
+section#gallery .secondary-gallery { float: left; margin-top: 40px; /* Classes */ /* Elements */ }
 section#gallery .secondary-gallery .desc { min-height: 120px; }
 section#gallery .secondary-gallery figure { max-height: 200px; overflow: hidden; margin-bottom: 15px; }
 section#gallery .secondary-gallery figure img { margin-top: -50px; }
 
-section#contact { width: 100%; position: relative; z-index: 20; margin-top: -50px; float: left; }
+section#contact { width: 100%; position: relative; z-index: 20; margin-top: -50px; float: left; /* Classes */ /* Elements */ }
 section#contact .row { background: #fff; border-radius: 2px; padding-top: 20px; min-height: 500px; }
+section#contact .directions { margin-top: 15px; }
+section#contact .directions p { font-size: 0.9em; }
 section#contact h3 { font-size: 1.5em; margin-bottom: 20px; }
 section#contact h4 { font-size: 1.2em; }
 section#contact address { font-size: 0.9em; border-bottom: 1px dashed #252525; }
 section#contact iframe { width: 100%; height: 480; }
-section#contact .directions { margin-top: 15px; }
-section#contact .directions p { font-size: 0.9em; }
 
-footer { width: 100%; float: left; margin-top: 40px; }
+footer { width: 100%; float: left; margin-top: 40px; /* Elements */ }
 footer p { font-size: 0.8em; }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) { /* Welcome Section */
+  section#welcome { padding-top: 75px; padding-bottom: 120px; }
+  section#welcome .desc { font-size: 1em; text-align: center; color: #fff; }
+  /* About Section */
+  section#about h3 { font-size: 1.3em; }
+  section#about #creed p { font-size: 1.3em; }
+  section#about #social { font-size: 1.8em; }
+  /* Gallery Section */
+  section#gallery h3 { font-size: 1.8em; }
+  section#contact { width: 100%; position: relative; z-index: 20; margin-top: -50px; float: left; /* Classes */ /* Elements */ }
+  section#contact .row { background: #fff; border-radius: 2px; padding-top: 20px; min-height: 500px; }
+  section#contact .directions { margin-top: 15px; }
+  section#contact .directions p { font-size: 0.8em; }
+  section#contact h3 { font-size: 1.3em; margin-bottom: 20px; }
+  section#contact h4 { font-size: 1.2em; }
+  section#contact address { font-size: 0.8em; border-bottom: 1px dashed #252525; }
+  section#contact address p { font-size: 11px; }
+  section#contact iframe { width: 100%; height: 480; } }
